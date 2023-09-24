@@ -1,0 +1,263 @@
+/* <a> element yang menerapkan href attribute */
+a[href] {
+  color: blue;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+a[href*="example"] {
+  background-color: silver;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+a[href$=".org"] {
+  color: red;
+}
+
+/* <!-------------- Adjacent Sibling Selector (+) --------------> */
+/* Rule akan diterapkan pada elemen paragraf yang berada tepat setelah elemen img */
+img + p {
+  color: green;
+}
+
+/* <!-------------- General Sibling Selector (~) --------------> */
+img ~ p {
+  color: green;
+}
+
+/* <!-- Child Selector (>) --> */
+/* Rule akan diterapkan pada elemen paragraf yang merupakan child dari elemen div */
+div > p {
+  background-color: yellow;
+}
+
+/* Rule akan diterapkan pada elemen header yang berada tepat setelah elemen img */
+/* div p {
+  background-color: yellow;
+} */
+
+/* <!-------------- Pseudo-class Selector ----------------> */
+/* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+.anchor:link {
+  color: red;
+}
+
+/* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+.anchor:visited {
+  color: green;
+}
+
+/* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+.anchor:hover {
+  color: pink;
+}
+
+/* rule akan diterapkan pada sebuah tautan ketika ditekan */
+.anchor:active {
+  color: orange;
+}
+
+/* <!-------------- Pseudo-element ::before dan ::after ----------------> */
+blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Rule styling akan diterapkan pada karakter pertama di sebuah paragraf */
+.fl ::first-letter {
+  font-size: 32px;
+  font-weight: bold;
+  color: saddlebrown;
+}
+
+/* <!-------------- Font-weight ----------------> */
+.normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.bolder {
+  font-weight: bolder;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.fw100 {
+  font-weight: 100;
+}
+
+.fw200 {
+  font-weight: 200;
+}
+
+.fw300 {
+  font-weight: 300;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+/* <!-------------- Line Height ----------------> */
+.ln2 {
+  line-height: 2;
+}
+
+.ln200 {
+  line-height: 200%;
+}
+
+.ln2em {
+  line-height: 2em;
+}
+
+/* <!-------------- Text Alignment ----------------> */
+main {
+  width: 80%;
+  margin: 0 auto;
+  border-top-style: solid;
+  border-right-style: dotted;
+  border-bottom-style: groove;
+  border-left-style: double;
+  box-shadow: 6px 6px 5px 10px #666666;
+  border-width: 4px;
+  border-color: red;
+  /* border: 1px solid black; */
+}
+
+.tl-left {
+  text-align: left;
+}
+
+.tl-right {
+  text-align: right;
+}
+
+.tl-center {
+  text-align: center;
+}
+
+.tl-justify {
+  text-align: justify;
+}
+
+/* <!-------------- Text Transform ----------------> */
+.transform-none {
+  text-transform: none;
+}
+
+.transform-capitalize {
+  text-transform: capitalize;
+}
+
+.transform-lowercase {
+  text-transform: lowercase;
+}
+
+.transform-uppercase {
+  text-transform: uppercase;
+}
+
+/* <!-------------- Word and Letter Spacing ----------------> */
+.letter-spacing {
+  letter-spacing: 4px;
+}
+
+.word-spacing {
+  word-spacing: 1.5em;
+}
+
+/* <!-------------- Text Shadow ----------------> */
+.one {
+  text-shadow: 2px 2px 0px #000000;
+  background-color: #eeeeee;
+  color: #666666;
+}
+
+.two {
+  text-shadow: 4px 4px 3px #666666;
+  background-color: #dddddd;
+  color: #666666;
+}
+
+.three {
+  text-shadow: 4px 4px 7px #111111;
+  background-color: #cccccc;
+  color: #ffffff;
+}
+
+.four {
+  text-shadow: -2px -2px #666666;
+  background-color: #cccccc;
+  color: #bbbbbb;
+}
+
+/* <!-------------- Opacity ----------------> */
+p.opacity-50 {
+  background-color: #f00000;
+  opacity: 50%;
+}
+
+/* <!-------------- Opacity pada warna ----------------> */
+/* div {
+  width: 50%;
+  height: 200px;
+
+  line-height: 200px;
+  text-align: center;
+}
+
+.box-1 {
+  background-color: rgb(255, 255, 0, 0.75);
+
+  float: left;
+}
+
+.box-2 {
+  background-color: hsl(120, 100%, 25%, 0.75);
+
+  float: left;
+  margin-left: -25%;
+}
+
+.box-3 {
+  background-color: #0000ffaa;
+
+  float: left;
+  margin-left: -25%;
+} */

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../asset/css/materi.css" />
+  </head>
+  <body>
+    <ul>
+      <ul>
+        <li><a href="#inteRnal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+      </ul>
+    </ul>
+
+    <!-- Adjacent Sibling Selector (+) -->
+    <p>
+      Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada
+      elemen paragraf ini.
+    </p>
+    <img src="../asset/img/linkedin.png" alt="Dicoding logo" width="50px" />
+    <p>
+      Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+      paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna
+      hijau
+    </p>
+
+    <!-- General Sibling Selector (~) -->
+    <img src="../asset/img/linkedin.png" alt="Dicoding logo" width="50px" />
+    <p>
+      Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+      paragraf ini menerapkan rule dengan menampilkan teks berwarna hijau.
+    </p>
+    <div>
+      <p>
+        Ini merupakan paragraf ketiga, letaknya setelah elemen gambar, tetapi
+        paragraf ini dibungkus di dalam div sehingga paragraf ini tidak akan
+        menerapkan rule styling karena tidak memiliki induk yang sama.
+      </p>
+    </div>
+    <p>
+      Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan
+      memiliki induk yang sama seperti elemen gambar, sehingga elemen ini akan
+      menerapkan rule dengan menampilkan teks berwarna hijau.
+    </p>
+
+    <!-- Child Selector (>) -->
+    <div>
+      <p>Paragraf pertama. di dalam div.</p>
+      <p>Paragraf kedua. di dalam div.</p>
+      <section>
+        <p>
+          Paragraf ketiga. di dalam div Namun, bukan sebagai anak elemen secara
+          langsung.
+        </p>
+      </section>
+      <p>Paragraf keempat. di dalam div.</p>
+    </div>
+    <p>Paragraf kelima. di luar div.</p>
+
+    <!-- Pseudo-class Selector -->
+    <a class="anchor" href="https://www.google.com/">Kunjungi Halaman Google</a>
+
+    <!-- Pseudo-element ::before dan ::after -->
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error
+      explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit
+      sed voluptates. Aliquam aspernatur autem est nobis officia praesentium
+      quas recusandae rem.
+    </blockquote>
+    <div class="fl">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        repellendus impedit sunt, suscipit porro sit aliquam repellat distinctio
+        delectus libero quaerat ullam, voluptas tempore asperiores molestias
+        fugiat totam veniam! Eos.
+      </p>
+    </div>
+
+    <!-- Font-weight -->
+    <span class="normal">normal</span> | <span class="bold">bold</span> |
+    <span class="bolder">bolder</span> | <span class="lighter">lighter</span> |
+    <span class="fw100">fw100</span> | <span class="fw200">fw200</span> |
+    <span class="fw300">fw300</span> | <span class="fw400">fw400</span> |
+    <span class="fw500">fw500</span> | <span class="fw600">fw600</span> |
+    <span class="fw700">fw700</span> | <span class="fw800">fw800</span> |
+    <span class="fw900">fw900</span>
+
+    <!-- Line Height -->
+    <p class="ln2">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada
+      garis dasar ke garis dalam menampilkannya pada halaman web.
+    </p>
+    <p class="ln200">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada
+      garis dasar ke garis dalam menampilkannya pada halaman web.
+    </p>
+    <p class="ln2em">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada
+      garis dasar ke garis dalam menampilkannya pada halaman web.
+    </p>
+
+    <!-- Text Alignment -->
+    <main>
+      <p class="tl-left">
+        text-align menetapkan peletakkan secara horizontal terhadap
+        konten/elemen yang bersifat inline yang berada dalam elemen block.
+      </p>
+
+      <p class="tl-right">
+        text-align menetapkan peletakkan secara horizontal terhadap
+        konten/elemen yang bersifat inline yang berada dalam elemen block.
+      </p>
+
+      <p class="tl-center">
+        text-align menetapkan peletakkan secara horizontal terhadap
+        konten/elemen yang bersifat inline yang berada dalam elemen block.
+      </p>
+
+      <p class="tl-justify">
+        text-align menetapkan peletakkan secara horizontal terhadap
+        konten/elemen yang bersifat inline yang berada dalam elemen block.
+      </p>
+
+      <!-- Text Transform -->
+      <p class="transform-none">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <p class="transform-capitalize">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <p class="transform-lowercase">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <p class="transform-uppercase">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <!-- Word and Letter Spacing -->
+      <p class="letter-spacing">
+        Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+      </p>
+      <p class="word-spacing">
+        Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+      </p>
+
+      <!-- Text Shadow -->
+      <p class="one">
+        Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+      </p>
+
+      <p class="two">
+        Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+      </p>
+
+      <p class="three">
+        Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+      </p>
+
+      <p class="four">
+        Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+      </p>
+
+      <!-- Opacity -->
+      <p class="opacity-50">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+        temporibus facere impedit natus blanditiis similique laudantium quaerat
+        tenetur quod praesentium.
+      </p>
+
+      <!-- Opacity pada Warna -->
+      <!-- <div class="box-1">Box 1</div>
+      <div class="box-2">Box 2</div>
+      <div class="box-3">Box 3</div> -->
+
+      
+    </main>
+  </body>
+</html>
